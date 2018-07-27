@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrollViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T72-Jd-kqZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="667" translatesAutoresizingMaskIntoConstraints="NO" id="NU7-MS-GCt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NU7-MS-GCt" firstAttribute="trailing" secondItem="T72-Jd-kqZ" secondAttribute="trailing" id="arq-gQ-8aW"/>
+                                    <constraint firstItem="NU7-MS-GCt" firstAttribute="bottom" secondItem="T72-Jd-kqZ" secondAttribute="bottom" id="eCT-eu-o4C"/>
+                                    <constraint firstItem="NU7-MS-GCt" firstAttribute="top" secondItem="T72-Jd-kqZ" secondAttribute="top" id="qCQ-V2-muJ"/>
+                                    <constraint firstItem="NU7-MS-GCt" firstAttribute="leading" secondItem="T72-Jd-kqZ" secondAttribute="leading" id="wuq-em-Mbg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T72-Jd-kqZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="8sd-Z3-dPh"/>
+                            <constraint firstItem="T72-Jd-kqZ" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="ETa-b4-ap7"/>
+                            <constraint firstItem="T72-Jd-kqZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jG5-84-FTN"/>
+                            <constraint firstItem="T72-Jd-kqZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qsw-ie-gMO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NU7-MS-GCt" id="GlB-8v-r5m"/>
+                        <outlet property="scrollView" destination="T72-Jd-kqZ" id="gwX-1P-4fq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
